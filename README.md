@@ -42,7 +42,7 @@ Link the correct genotypes to each fastq file.
       ln -s SRR2068304_1.fastq.gz M09-1x.fastq.gz
       ln -s SRR2068242_1.fastq.gz M10-2x.fastq.gz
       ln -s SRR2068260_1.fastq.gz M11-2x.fastq.gz
-      ln -s SRR2069932_1.fastq.gz DM-2x.fastq.gz
+      ln -s SRR2069932_1.fastq.gz MDM-2x.fastq.gz     <-- added M prefix for consistency
       
 
 Filter and cleanup the data for alignment.
