@@ -47,6 +47,13 @@ Make a folder called /Original_files/ and make symlinks the correct genotypes to
 
 Filter and cleanup the data for alignment.
 
+      
+      N_Adapter_Trim_Batchmode.py 75
+      
+
+Align to the potato genome.
+
+
 
 ## C. Run bin-by-sam analysis
 
