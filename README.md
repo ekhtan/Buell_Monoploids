@@ -26,7 +26,7 @@ We are only interested in genome data for this analysis. Also note that we took 
       
 
 
-## B. Data download, prep and alignment
+## B. Data prep and alignment
 
 Make a folder called /Original_files/ and make symlinks the correct genotypes to each fastq file.
 
