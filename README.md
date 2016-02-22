@@ -51,8 +51,19 @@ Filter and cleanup the data for alignment.
       N_Adapter_Trim_Batchmode.py 75
       
 
-Align to the potato genome.
+Because the files are really large, decided to subset the input to just 10 million reads in this run.
 
+      
+      for i in *.fq
+      do
+        BASE=$(basename $i .fq)
+        echo 'processing' $BASE
+        head -n 40000000 $i > $BASE'_subset.fq'
+        echo 'done'
+      done
+      
+
+Align to the potato genome.
 
 
 ## C. Run bin-by-sam analysis
