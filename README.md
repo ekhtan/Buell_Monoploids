@@ -8,7 +8,7 @@ The plan is to (1) generate bin-by-sam dosage plots (2) generate SNP plots to te
 
 ### (1) Dosage analysis can be found [here] (https://github.com/ekhtan/Buell_Monoploids/blob/master/Dosage_Analysis.md)
 
-Summary of results: We observed some chromosomal regions that are underrepresented in each some monoploid or doubled monoploid but are not absent, compared to the reference genome.
+Summary of results: We observed some chromosomal regions that are underrepresented in some monoploid or doubled monoploid lines but did not find regions that are completely absent. 
 
 ------
 
