@@ -71,6 +71,6 @@ Align to the potato genome.
 
 ## D. Plot data
 
-![500kb Dosage Plot] (/Buell_Monoploids/Buell_500kb.png)
+![500kb Dosage Plot] (Buell_500kb.png)
 
 
