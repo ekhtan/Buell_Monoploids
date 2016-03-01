@@ -71,6 +71,8 @@ Align to the potato genome.
 
 ## D. Plot data
 
+Data was plotted on JMP, showing each individual chromosomes. Individuals with chromosomal regions underrepresented are selected with black italics in the figure below. However, we did no observe complete loss of certain regions at this resolution.
+
 ![500kb Dosage Plot] (Buell_500kb.png)
 
 
