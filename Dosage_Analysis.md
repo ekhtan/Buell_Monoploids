@@ -1,7 +1,5 @@
 #Dosage Analysis
 
------
-
 ## A. Download data
 
 We are only interested in genome data for this analysis. Also note that we took just Read 1 for this analysis.
@@ -72,5 +70,7 @@ Align to the potato genome.
       
 
 ## D. Plot data
+
+
 
 
