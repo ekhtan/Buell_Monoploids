@@ -12,4 +12,4 @@ Summary of results: We observed some chromosomal regions that are underrepresent
 
 ------
 
-### (2) SNP analysis can be found [here] ()
+### (2) SNP analysis can be found [here] (https://github.com/ekhtan/Buell_Monoploids/blob/master/SNP_Analysis.md)
