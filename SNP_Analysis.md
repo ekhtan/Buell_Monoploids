@@ -94,7 +94,7 @@ Interleave, filter and trim files in paired-end mode.
       # This script takes .gz files
       ################
       
-      Filter_N_Adapter_Trim_Batchmode.py 45 -p
+      N_Adapter_Trim_Batchmode.py 45 -p
       
 
 
