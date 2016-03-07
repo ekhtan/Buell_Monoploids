@@ -4,12 +4,37 @@
 ## A. Download both R1 and R2 files from SRA
 
       
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067676/SRR2067676_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067686/SRR2067686_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/009/SRR2067779/SRR2067779_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/007/SRR2065337/SRR2065337_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/009/SRR2065339/SRR2065339_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/007/SRR2069937/SRR2069937_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/001/SRR2067791/SRR2067791_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/002/SRR2067802/SRR2067802_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/004/SRR2068304/SRR2068304_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/002/SRR2068242/SRR2068242_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/000/SRR2068260/SRR2068260_1.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/002/SRR2069932/SRR2069932_1.fastq.gz .
       
-      
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067676/SRR2067676_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067686/SRR2067686_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/009/SRR2067779/SRR2067779_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/007/SRR2065337/SRR2065337_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/009/SRR2065339/SRR2065339_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/007/SRR2069937/SRR2069937_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/001/SRR2067791/SRR2067791_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/002/SRR2067802/SRR2067802_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/004/SRR2068304/SRR2068304_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/002/SRR2068242/SRR2068242_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/000/SRR2068260/SRR2068260_2.fastq.gz .
+      wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/002/SRR2069932/SRR2069932_2.fastq.gz .
       
 
 
 ## B. Prepare files for analysis
+
+Move downloaded files to a folder called /Original_files/ and make symlinks to the appropriate genotypes.
 
       
       ln -s Original_files/SRR2067676_1.fastq.gz M01-1x_R1_001.fastq.gz
@@ -39,7 +64,7 @@
       ln -s Original_files/SRR2069932_2.fastq.gz MDM-2x_R2_001.fastq.gz
       
 
-Also have to unzip files for the next bash script to work.
+Unzip files for the next bash script to work.
 
       
       gunzip -f *R1*
