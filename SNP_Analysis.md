@@ -4,6 +4,7 @@
 ## A. Download data
 
 Require both R1 and R2 reads in this case.
+
       
       wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067676/SRR2067676_1.fastq.gz .
       wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067686/SRR2067686_1.fastq.gz .
