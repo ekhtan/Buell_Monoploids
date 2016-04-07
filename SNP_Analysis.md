@@ -3,7 +3,7 @@
 
 ## A. Download data
 
-Require both R1 and R2 reads in this case.
+Will require both R1 and R2 reads in this case.
 
       
       wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR206/006/SRR2067676/SRR2067676_1.fastq.gz .
@@ -99,4 +99,27 @@ Interleave, filter and trim files in paired-end mode.
       N_Adapter_Trim_Batchmode.py 45 -p
       
 
+Interleaved files were kept and single R1 and R2 files were removed to conserve space.
+
+## C. Alignment using bwa
+
+      
+      bwa-doall-vModules-current.py -d ~ekhtan/genomes/PGSC_DM_v4.03_pseudomolecules.fasta -t 20
+      
+
+This took about a week, considering the large file sizes.
+
+## D. Test case using the M04 monoploid
+
+Will look at SNPs from two file types: 
+(a) uniquely mapping reads that are with the sam cigar string: XT:A:U 
+(b) usam files, which are 'unique' reads that were isolate by having different start and end mapping positions, seen as a result of PCR duplicates (although in this case, a PCR-free method of library construction was used)
+
+These .bam files were sorted and an mpileup file generated, and parsed using two scripts that support threading.
+
+      
+      beta-run-mpileup.py
+      
+      beta-mpileup-parser.py
+      
 
