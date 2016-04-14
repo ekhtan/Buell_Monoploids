@@ -123,3 +123,13 @@ These .bam files were sorted and an mpileup file generated, and parsed using two
       beta-mpileup-parser.py
       
 
+Look to see if we have SNPs with 100% coverage in M04 vs MDM
+
+      
+      # This awk command line looks at the 100% mapped nucleotide for M04 (column 4), 
+      # compared to unmatched 100% mapped nucleotide of MDM (column 8)
+      
+      awk -F'\t' '$4 != $8 && $4 ~ /100.0/ && $8 ~ /100.0/' parsed_mpileup_testM04.txt
+      
+
+
