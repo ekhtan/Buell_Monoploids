@@ -113,7 +113,7 @@ This took about a week, considering the large file sizes.
 
 Will look at SNPs from two file types: 
 (a) uniquely mapping reads that are with the sam cigar string: XT:A:U 
-(b) usam files, which are 'unique' reads that were isolate by having different start and end mapping positions, seen as a result of PCR duplicates (although in this case, a PCR-free method of library construction was used)
+(b) usam files, which are 'unique' reads that were isolate by having different start and end mapping positions, seen as a result of PCR duplicates
 
 These .bam files were sorted and an mpileup file generated, and parsed using two scripts that support threading.
 
